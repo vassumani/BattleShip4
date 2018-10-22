@@ -171,7 +171,8 @@ static class DeploymentController
 	private static ShipName GetShipMouseIsOver()
 	{
 		foreach (ShipName sn in Enum.GetValues(typeof(ShipName))) {
-			int i = 0;
+            int i;
+            i = 0;
 			i =((int)sn) - 1;
 
 			if (UtilityFunctions.IsMouseInRectangle(SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT)) {
